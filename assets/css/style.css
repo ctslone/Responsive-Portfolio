@@ -132,7 +132,7 @@ body {
     background: #ffffff;
     width: 918px;
     margin: 0 auto;
-    position: absolute;
+    /* position: absolute; */
     top: 100px;
     padding-left: 20px;
     padding-right: 20px;
@@ -140,6 +140,7 @@ body {
     border-width: 1px;
     border-color: #dddddd;
     margin-bottom: 85px;
+    margin-top: 100px;
 }
 
 .top-row {
@@ -307,7 +308,7 @@ a:hover {
     background: #ffffff;
     width: 918px;
     margin: 0 auto;
-    position: absolute;
+    /* position: absolute; */
     top: 100px;
     padding-left: 20px;
     padding-right: 20px;
@@ -315,6 +316,7 @@ a:hover {
     border-width: 1px;
     border-color: #dddddd;
     margin-bottom: 85px;
+    margin-top: 100px;
   }
 
   .container {
@@ -410,7 +412,7 @@ a:hover {
         width: 300px;
     }
     .nav-links{
-        right: -20;
+        right: 20px;
         position: absolute;
     }
 
@@ -429,10 +431,30 @@ a:hover {
         position: absolute;
         margin-left: 50px;
         margin-top: 0;
-    }  
+    } 
     
+    .nav-links{
+        right: 20px;
+        position: absolute;
+    }
+
+    /* contact page */
+
+    .header {
+        width: 100%;
+    }
+    .my-name {
+        left: 6%;  
+    }
+    .contact {
+        width: 550px;
+        position: absolute;
+        margin-left: 50px;
+        margin-top: 0;
+    }
+
     .nav-links {
-        right: 0;
+        right: 20px;
         position: absolute;
     }
 
@@ -480,6 +502,24 @@ a:hover {
         right: 25px;
     }
 
+    /* contact page */
+
+    .contact {
+        width: 670px;
+        position: absolute;
+        margin-left: 11px;
+        margin-top: 0;
+    }
+
+    .nav-links {
+        position: absolute;
+    }
+
+    li a {
+        position: relative;
+        right: 25px;
+    }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -500,7 +540,7 @@ a:hover {
         
     }
     .bio {
-        width: 500px;
+        width: 550px;
         margin-top: 75px;
     }
     #bio-image {
@@ -508,8 +548,19 @@ a:hover {
         height: 450px;
         padding-bottom: 20px;
     }
+    /* Trying to move the nav links below h1 my name, isnide the header */
     .nav-links {
-        /* Trying to move the nav links below h1 my name, isnide the header */
+        position: absolute;
+        bottom: 0;
+        left: 20%;
+        margin-right: 150px;
+        
+    }
+
+    li a {
+        right: 0;
+        padding: 15px;
+    
     }
 
     /* Portfolio Page */
@@ -653,3 +704,47 @@ a:hover {
     }
 
     /* need to figure out how to get nav buttons below name h1 tag */
+
+    .nav-links {
+        position: absolute;
+        bottom: 0;
+        left: 20%;
+        margin-right: 150px;
+        
+    }
+
+    li a {
+        right: 0;
+        padding: 15px;
+    
+    }
+
+    /* contact page */
+
+    .contact {
+        width: 550px;
+        margin-top: 75px;
+    }
+
+    .my-name {
+        width: 100%;
+        right: 20px;
+        position: static;
+        text-align: center;
+    }
+
+    .nav-links {
+        position: absolute;
+        bottom: 0;
+        left: 20%;
+        margin-right: 150px;
+        
+    }
+
+    li a {
+        right: 0;
+        padding: 15px;
+    
+    }
+
+}
