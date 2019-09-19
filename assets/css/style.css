@@ -7,8 +7,7 @@ html {
 li {
     list-style-type: none;
     display: inline;
-    float: right;
-     
+    float: right;  
 }
 
 li a {
@@ -64,27 +63,10 @@ body {
 
 }
 
-/* .contents {
-    width: 960px;
-    margin: 0 auto;
-    background: #ffffff;
-    width: 918px;
-    margin: 0 auto;
-    position: absolute;
-    top: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: gainsboro;
-    margin-bottom: 85px;
-} */
-
 .bio {
     background: #ffffff;
     width: 918px;
     margin: 0 auto;
-    /* position: absolute; */
     top: 100px;
     padding-left: 20px;
     padding-right: 20px;
@@ -112,16 +94,6 @@ body {
     padding-right: 15px;
 }
 
-/* This clearfix does not appear to do antyhing for the problem of the footer covering the bio div. However, adding bottom margin to bio div fixes the problem...? Not sure why clearfix does not work 
-
-.clearfix::after {
-    content: "";
-    display: both;
-    clear: both;
-} */
-
-
-
 /* ------------------------------------ Portfolio Page ------------------------------ */
 .portfolio-title {
     color: #4aaaa5;
@@ -132,7 +104,6 @@ body {
     background: #ffffff;
     width: 918px;
     margin: 0 auto;
-    /* position: absolute; */
     top: 100px;
     padding-left: 20px;
     padding-right: 20px;
@@ -308,7 +279,6 @@ a:hover {
     background: #ffffff;
     width: 918px;
     margin: 0 auto;
-    /* position: absolute; */
     top: 100px;
     padding-left: 20px;
     padding-right: 20px;
@@ -395,9 +365,6 @@ a:hover {
 
     /* About Page */
 
-    .header {
-        width: 100%;
-    }
     .my-name {
         left: 6%;  
     }
@@ -411,16 +378,8 @@ a:hover {
         height: 300px;
         width: 300px;
     }
-    .nav-links{
-        right: 20px;
-        position: absolute;
-    }
 
     /* Portfolio Page */
-
-    .header {
-        width: 100%;
-    }
     
     .my-name {
         left: 6%;
@@ -432,17 +391,9 @@ a:hover {
         margin-left: 50px;
         margin-top: 0;
     } 
-    
-    .nav-links{
-        right: 20px;
-        position: absolute;
-    }
 
     /* contact page */
 
-    .header {
-        width: 100%;
-    }
     .my-name {
         left: 6%;  
     }
@@ -451,6 +402,12 @@ a:hover {
         position: absolute;
         margin-left: 50px;
         margin-top: 0;
+    }
+
+    /* site-wide changes */
+
+    .header {
+        width: 100%;
     }
 
     .nav-links {
@@ -464,10 +421,6 @@ a:hover {
 
     /* About Page */
 
-    .header {
-        width: 100%;
-
-    }
     .my-name {
         left: 20px;  
     }
@@ -476,12 +429,7 @@ a:hover {
         position: absolute;
         margin-top: 0;
         margin-left: 11px;
-        /* margin: 0 auto; */
-        /* margin-top: 50px; */
     
-    }
-    .nav-links{
-        left: 63%;
     }
 
     /* Portfolio Page */
@@ -493,15 +441,6 @@ a:hover {
         margin-top: 0;
     }
 
-    .nav-links {
-        position: absolute;
-    }
-
-    li a {
-        position: relative;
-        right: 25px;
-    }
-
     /* contact page */
 
     .contact {
@@ -511,7 +450,14 @@ a:hover {
         margin-top: 0;
     }
 
-    .nav-links {
+    /* site-wide changes */
+
+    .header {
+        width: 100%;
+    }
+
+    .nav-links{
+        left: 63%;
         position: absolute;
     }
 
@@ -519,19 +465,12 @@ a:hover {
         position: relative;
         right: 25px;
     }
-
 }
 
 @media screen and (max-width: 640px) {
 
     /* About Page */
 
-    .header {
-        position: fixed;
-        width: 100%;
-        height: 152px;
-        
-    }
     .my-name {
         width: 100%;
         right: 20px;
@@ -547,20 +486,6 @@ a:hover {
         width: 100%;
         height: 450px;
         padding-bottom: 20px;
-    }
-    /* Trying to move the nav links below h1 my name, isnide the header */
-    .nav-links {
-        position: absolute;
-        bottom: 0;
-        left: 20%;
-        margin-right: 150px;
-        
-    }
-
-    li a {
-        right: 0;
-        padding: 15px;
-    
     }
 
     /* Portfolio Page */
@@ -618,12 +543,6 @@ a:hover {
     .rpg-caption {
         margin: 0 auto;
     }
-
-    /* .trivia-pic {
-        height: 400px;
-        width: 550px;
-    }  */
-
 
     .mid-row {
         height: 800px;
@@ -703,22 +622,6 @@ a:hover {
         bottom: -20px;
     }
 
-    /* need to figure out how to get nav buttons below name h1 tag */
-
-    .nav-links {
-        position: absolute;
-        bottom: 0;
-        left: 20%;
-        margin-right: 150px;
-        
-    }
-
-    li a {
-        right: 0;
-        padding: 15px;
-    
-    }
-
     /* contact page */
 
     .contact {
@@ -733,11 +636,20 @@ a:hover {
         text-align: center;
     }
 
+    /* site-wide changes */
+
+    .header {
+        position: fixed;
+        width: 100%;
+        height: 152px;
+        
+    }
+
     .nav-links {
         position: absolute;
         bottom: 0;
         left: 20%;
-        margin-right: 150px;
+        margin-right: 160px;
         
     }
 
@@ -746,5 +658,6 @@ a:hover {
         padding: 15px;
     
     }
+
 
 }
