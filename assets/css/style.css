@@ -173,45 +173,51 @@ a:hover {
 
 
 
-.hangman-div {
-    float: left;
+.hangman .caption {
+    margin-right: 20px;
 }
 
-.rpg-div {
-    float: left;
+.rpg .caption {
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
-.trivia-div {
-    float: left;
+.trivia .caption {
+    margin-right: 20px;
 }
 
-.widget-div {
-    float: left;
+.widget .caption {
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
-.hangman-container {
+.rock .caption {
+    margin-left: 0 auto;
+}
+
+.project {
+    float: left;
     position: relative;
     width: 300px;
     height: 300px;
   }
   
-.hangman-caption {
+.caption {
     text-align: center;
     position: absolute;
     bottom: 0;
     background-color: #4aaaa5;
     color: #ffffff;
-    width: 100%;
-    margin-right: 20px; 
+    width: 100%; 
   }
 
-.rpg-container {
+/* .rpg-container {
     position: relative;
     width: 300px;
     height: 300px;
-  }
+  } */
   
-.rpg-caption {
+/* .rpg-caption {
     text-align: center;
     position: absolute;
     bottom: 0;
@@ -219,15 +225,15 @@ a:hover {
     color: #ffffff;
     width: 100%;
     margin-left: 20px;
-  }
+  } */
 
-.trivia-container {
+/* .trivia-container {
     position: relative;
     width: 300px;
     height: 300px;
-  }
+  } */
   
-.trivia-caption {
+/* .trivia-caption {
     text-align: center;
     position: absolute;
     bottom: 0;
@@ -235,15 +241,15 @@ a:hover {
     color: #ffffff;
     width: 100%;
 
-  }
+  } */
 
-.widget-container {
+/* .widget-container {
     position: relative;
     width: 300px;
     height: 300px;
-  }
+  } */
   
-.widget-caption {
+/* .widget-caption {
     text-align: center;
     position: absolute;
     bottom: 0;
@@ -251,15 +257,15 @@ a:hover {
     color: #ffffff;
     width: 100%;
     margin-left:20px; 
-  }
+  } */
 
-.rock-container {
+/* .rock-container {
     position: relative;
     width: 300px;
     height: 300px;
-  }
+  } */
   
-.rock-caption {
+/* .rock-caption {
     text-align: center;
     position: absolute;
     bottom: 0;
@@ -267,7 +273,7 @@ a:hover {
     color: #ffffff;
     width: 100%;
     margin-left:0 auto; 
-  }
+  } */
 
   /* -------------------------------- Contact Page ---------------------------------- */
   .contact-title {
@@ -501,17 +507,13 @@ a:hover {
         height: 800px;
         width: 550px;
         padding-bottom: 50px;
+        padding-top: 0px;
     }
 
-    .hangman-div {
+    .hangman {
         height: 400px;
         width: 550px;
         margin-bottom: 30px;
-    }
-
-    .hangman-container {
-        height: 400px;
-        width: 550px;
     }
 
     .hangman-pic {
@@ -520,18 +522,14 @@ a:hover {
         padding: 0;
     }
 
-    .hangman-caption {
-        margin: 0 auto;
-    }
-
-    .rpg-div {
+    .rpg {
         height: 400px;
         width: 550px;
     }
 
-    .rpg-container {
-        height: 400px;
-        width: 550px;
+    .rpg .caption {
+        margin: 0;
+        bottom: 20px;
     }
 
     .rpg-pic {
@@ -540,26 +538,10 @@ a:hover {
         padding: 0;
     }
 
-    .rpg-caption {
-        margin: 0 auto;
-    }
-
     .mid-row {
         height: 800px;
         width: 550px;
         padding-bottom: 50px;
-    
-    }
-
-    .trivia-div {
-        height: 400px;
-        width: 550px;
-        margin-bottom: 30px;
-    }
-
-    .trivia-container {
-        height: 400px;
-        width: 550px;
     }
 
     .trivia-pic {
@@ -568,29 +550,20 @@ a:hover {
         padding: 0;  
     }
 
-    .trivia-caption {
-        bottom: -20px;
-    }
-
-    .widget-div {
-        height: 400px;
-        width: 550px;
-    }
-
-    .widget-container {
-        height: 400px;
-        width: 550px;
-    }
-
     .widget-pic {
         height: 400px;
         width: 550px;
         padding-left: 0;
     }
 
-    .widget-caption {
-        margin-left: 0;
-        bottom: -20px;
+    .widget {
+        height: 400px;
+        width: 550px;
+    }
+
+    .widget .caption {
+        margin-left: 0px;
+        bottom: -10px;
     }
 
     .bot-row {
@@ -600,32 +573,33 @@ a:hover {
         margin: 0;
     }
     
-    .rock-div {
+    .rock {
         height: 400px;
         width: 550px;
         margin-bottom: 30px;
     }
 
-    .rock-container {
+    .project {
         height: 400px;
         width: 550px;
+        margin-top: 20px;
     }
 
     .rock-pic {
         height: 400px;
         width: 550px;
-        padding-top: 20px;
+        /* padding-top: 20px; */
         
     }
 
-    .rock-caption {
-        bottom: -20px;
+    .caption {
+       margin-left: 0px; 
     }
 
     /* contact page */
 
     .contact {
-        width: 550px;
+        width: 500px;
         margin-top: 75px;
     }
 
